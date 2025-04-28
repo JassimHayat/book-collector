@@ -1,0 +1,50 @@
+{% extends 'base.html' %} {% load static %} {% block head %}
+<link
+  rel="stylesheet"
+  href="{% static 'css/books/book-index.css' %}"
+/>
+{% endblock %} {% block content %}
+
+<section class="page-header">
+  <h1>Book List</h1>
+  <img
+    src="{% static 'images/cool-cat.svg' %}"   ##need-update
+    alt="A cool cat"                           ##need-update 
+  />
+  <img
+    src="{% static 'images/happy-cat.svg' %}" ##need-update
+    alt="A happy cat"                         ##need-update
+  />
+  <img
+    src="{% static 'images/teacup-cat.svg' %}" ##need-update
+    alt="A cat in a teacup"                    ##need-update
+  />
+  <img
+    src="{% static 'images/cat-in-box.svg' %}" ##need-update
+    alt="A cat in a box"                       ##need-update
+  />
+</section>
+
+<section class="card-container">
+  {% for book in books %}
+  <div class="card">
+    <div class="card-content">
+      <div class="card-img-container">
+        <img
+          src="{% static 'images/sk8r-boi-cat.svg' %}"     ##need-update
+          alt="A skater boy cat"                            ##need-update
+        />
+      </div>
+      <h2 class="card-title">{{ book.bookTitle }}</h2>
+      {% if book.releaseDate > 2010 %}
+      <p>A {{ book.bookTitle }} is NEW Book. </p>
+      {% else %}
+      <p>A {{ book.bookTitle }} is OLD Book.</p>
+      {% endif %}
+      <p><small>{{ book.description }}</small></p>
+    </div>
+  </div>
+  {% endfor %}
+</section>
+
+{% endblock %}
