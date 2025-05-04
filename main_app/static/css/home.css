@@ -19,8 +19,6 @@ main {
   
   .header-logo-container {
     display: none;
-    
-    
   }
   
   .logo-container {
@@ -29,7 +27,6 @@ main {
   
   .book-container {
     width: 80%;
-    
   }
   
   .login {
@@ -56,6 +53,7 @@ main {
     flex-direction: column;
     width: 100%;
     margin: 14px 0 0px;
+    
   }
   
   .login label {

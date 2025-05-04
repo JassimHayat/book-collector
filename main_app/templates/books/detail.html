@@ -11,11 +11,12 @@
   <div class="book-details">
     <h1>{{ book.bookTitle }}</h1>
     {% if book.releaseDate > 2010 %}
-    <p>A {{ book.bookTitle }} is NEW Book. </p>
-    {% else %}
-    <p>A {{ book.bookTitle }} is OLD Book.</p>
+    <p>{{ book.description }}</p>
+      <p><small> The {{ book.bookTitle }} is NEW Book. </p></small> 
+      {% else %}
+      <p><small>The {{ book.bookTitle }} is OLD Book.</p></small>
     {% endif %}
-    <p><small>{{ book.description }}</small></p>
+    
 
     <div class="book-actions">
         <a href="{% url 'book-update' book.id %}" class="btn warn">Edit</a>
