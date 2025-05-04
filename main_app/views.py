@@ -19,7 +19,7 @@ class Home(LoginView):
 class BookCreate(CreateView):
     model = Book
     fields = ['bookTitle','description', 'genre', 'releaseDate']
-    # success_url = '/books/'
+    success_url = '/books/'
 
     def form_valid(self, form):
         form.instance.user = self.request.user

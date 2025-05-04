@@ -1,9 +1,10 @@
 main {
-    display: flex;
+    display:flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     height: 100%;
+    
   }
   
   main > section {
@@ -13,10 +14,13 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    
   }
   
   .header-logo-container {
     display: none;
+    
+    
   }
   
   .logo-container {
@@ -25,6 +29,7 @@ main {
   
   .book-container {
     width: 80%;
+    
   }
   
   .login {
@@ -33,15 +38,21 @@ main {
     justify-content: center;
     align-items: center;
     width: 80%;
+    color:rgb(190, 112, 18);
   }
   
+.login-section{
+  border-color: green
+}
+
   .login h1 {
     font-size: clamp(3.2rem, 3vw, 4.8rem);
     margin: 10px 0;
+    color:rgb(190, 112, 18)
   }
   
   .login > p {
-    display: flex;
+    display:inline-flexbox;
     flex-direction: column;
     width: 100%;
     margin: 14px 0 0px;
@@ -50,6 +61,7 @@ main {
   .login label {
     font-size: var(--font-reg);
     margin-bottom: 6px;
+    
   }
   
   .login input {
@@ -61,11 +73,13 @@ main {
     align-self: flex-end;
     margin-right: 0;
     margin-top: 16px;
+    
   }
   
   @media only screen and (min-width: 768px) {
     main {
-      justify-content: space-around;
+      justify-content:center;
+      
     }
   
     main > section {
@@ -78,10 +92,21 @@ main {
       border-radius: var(--card-border-radius);
       box-shadow: var(--card-box-shadow);
       width: 100%;
+      
     }
   
     .logo-container {
       max-width: 520px;
+      
     }
   }
   
+  /* .homepage-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 50%;
+    align-items: right;
+  } */

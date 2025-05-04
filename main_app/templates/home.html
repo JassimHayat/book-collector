@@ -4,18 +4,23 @@
   href="{% static 'css/home.css' %}"
 />
 {% endblock %} {% block content %}
-
+<!-- <div class="homepage-content"> -->
 <section class="logo-container">
   <div class="book-container">               
     <img
-      src="{% static 'images/logo12.png' %}"
+      src="{% static 'images/logo 98.png' %}"
       alt="The Book Collector logo"          
     />
   </div>
+  <!-- <img
+  src="{% static 'images/Book Collecotr (6).png' %}"
+  alt="The text Book Collector logo"          
+/> -->
+
 </section>
 
 {% if not user.is_authenticated %}
-  <section>
+  <section class="login-section">
     <form action="{% url 'home' %}" method="post" class="login">
       <h1>Login</h1>
       {% csrf_token %} {{ form.as_p }}
@@ -24,7 +29,7 @@
     </form>
   </section>
 {% endif %}
-
+<!-- </div> -->
 {% endblock %}
 
 
