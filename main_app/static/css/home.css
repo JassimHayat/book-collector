@@ -99,7 +99,7 @@ main {
     }
   }
   
-  /* .homepage-content {
+  .homepage-content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -107,4 +107,6 @@ main {
     align-content: center;
     width: 50%;
     align-items: right;
-  } */
+  }
+
+

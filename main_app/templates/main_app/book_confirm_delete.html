@@ -3,10 +3,11 @@
 {% block content %}
 
 <div class="page-header">
+  <div class="header-with-image">
   <h1>Delete Book?</h1>
-  <img src="{% static 'images/delete.png' %}" alt="delete images" />
-  <!-- please update this  -->
-</div>
+  <img src="{% static 'images/delete.png' %}" alt="delete image" class="delete-img"/>
+  </div>
+</div> 
 
 <h2>Are you sure you want to delete {{ book.bookTitle }}?</h2>
 

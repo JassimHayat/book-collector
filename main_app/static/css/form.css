@@ -10,7 +10,15 @@
     width: 100%;
     border-spacing: 0 20px;
   }
+
+  .page-header img{
+    width: 80px;
+    height: auto;
+    display: black;
+    margin-top: 10px;
+  }
   
+
   th {
     text-align: left;
     padding: 6px 20px 0 0;
@@ -38,4 +46,7 @@
     align-self: flex-end;
     margin-right: 40px;
   }
+
+
+
   
