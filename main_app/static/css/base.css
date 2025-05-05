@@ -318,10 +318,6 @@ html {
     color: var(--link-hover-color);
   }
 
-
-
-  
-
   .header-with-image {
     display: flex;
     align-items: center;
@@ -334,3 +330,8 @@ html {
     display: block;
     margin-top: 10px;
   }
+
+
+  
+
+  
