@@ -42,7 +42,7 @@
 1. **Upload Book Content**  
    Enable users to upload and store digital content (e.g., PDF files, eBooks, or notes) associated with each book in their collection. This feature will allow users to attach files to their books and easily download or reference them later.
 
-2. **Mark as Read / Unread** 
+2. **Mark as Read - Unread** 
    Track which books you've already read and which ones are on your "to read" list.
 
 3. **Search and Filter**  
