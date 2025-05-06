@@ -9,21 +9,16 @@
     <link rel="shortcut icon" type="image/png" href="" />
     <title>Book Collector</title>
     <link rel="stylesheet" href="{% static 'css/base.css' %}" />
-
-    {% block head %} 
+    {% block head %}
     {% endblock %}
   </head>
   <body>
     <header>
-      <div class="header-logo-container">
-        <a href="/">
-          <img src="{% static 'images/' %}" alt="The Book Collector Logo"  />  
-                                                                                              <!-- Please update this -->
-        </a>
-      </div>
       <nav>
         <ul>
+          
           {% if user.is_authenticated %}
+            <li><a href="/">Home</a></li>
             <li><a href="{% url 'book-index' %}">All Books</a></li>
             <li><a href="{% url 'book-create' %}">Add a Book</a></li>
             <li><a href="{% url 'about' %}">About</a></li>
@@ -33,7 +28,7 @@
                 <button type="submit">Log out</button>
               </form>
             </li>
-            {% else %}
+          {% else %}
             <li><a href="{% url 'about' %}">About</a></li>
             <li><a href="{% url 'home' %}">Login</a></li>
             <li><a href="{% url 'signup' %}">Sign Up</a></li>
@@ -42,8 +37,8 @@
       </nav>
     </header>
     <main>
-     {% block content %} 
-     {% endblock %}
-     </main>
+      {% block content %}
+      {% endblock %}
+    </main>
   </body>
 </html>
