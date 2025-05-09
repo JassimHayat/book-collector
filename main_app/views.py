@@ -6,6 +6,7 @@ from django.contrib.auth.views import LoginView
 from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 
 
@@ -16,7 +17,7 @@ class Home(LoginView):
     template_name = 'home.html'
 
 
-class BookCreate(CreateView):
+class BookCreate(LoginRequiredMixin,CreateView):
     model = Book
     fields = ['bookTitle','description', 'genre', 'releaseDate']
     success_url = '/books/'
